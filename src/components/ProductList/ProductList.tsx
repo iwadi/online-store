@@ -1,0 +1,68 @@
+import { Product } from '../types/types';
+
+export const Products: Product[] = [
+    { 
+        id: 1,
+        img: "/images/png_images/BarbertonDaisy.png",
+        name: "Barberton Daisy", 
+        price: 119.00,
+        categories: ["Комнатные растения"], 
+        size: "Средний",
+    },
+    { 
+        id: 2, 
+        img: "/images/png_images/AngelWingBegonia.png", 
+        name: "Angel Wing Begonia", 
+        price: 169, 
+        categories: ["Комнатные растения"], 
+        size: "Маленький",
+    },
+    { 
+        id: 3, 
+        img: "/images/png_images/AfricanViolet.png", 
+        name: "African Violet", 
+        price: 199, 
+        categories: ["Популярные растения"], 
+        size: "Большой",
+    },
+    { 
+        id: 4, 
+        img: "/images/png_images/BeachSpiderLily.png", 
+        name: "Beach Spider Lily", 
+        price: 129.00, 
+        categories: ["Суккуленты"], 
+        size: "Большой",
+    },
+    { 
+        id: 5, 
+        img: "/images/png_images/BlushingBromeliad.png", 
+        name: "Blushing Bromeliad", 
+        price: 139, 
+        categories: ["Суккуленты"], 
+        size: "Большой", 
+    },
+    { 
+        id: 6, 
+        img: "/images/png_images/AluminumPlant.png", 
+        name: "Aluminum Plant", 
+        price: 179, 
+        categories: ["Маленькие растения"], 
+        size: "Средний", 
+    },
+    { 
+        id: 7, 
+        img: "/images/png_images/Bird'sNestFern.png", 
+        name: "Bird's Nest Fern",
+        price: 99.00, 
+        categories: ["Большие растения"], 
+        size: "Большой",
+    },
+    { 
+        id: 8, 
+        img: "/images/png_images/BroadleafLadyPalm.png", 
+        name: "Broadleaf Lady Palm", 
+        price: 59, 
+        categories: ["Садоводство"], 
+        size: "Средний",
+    },
+];
