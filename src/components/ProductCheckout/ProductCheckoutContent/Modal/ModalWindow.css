@@ -1,0 +1,214 @@
+.Modal {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #00000078;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    transform: scale(0);
+    transition: .3s;
+}
+
+.Modal.active {
+    transform: scale(1);
+}
+
+/* ========== */
+/* ========== */
+
+.Modal-content {
+    /* width: 578px;
+    background: #fff;
+    border-bottom: 10px solid #46a358;
+    overflow-y: auto;
+    height: auto; */
+    display: grid;
+    justify-content: center;
+    width: 90vw; 
+    max-width: 530px; 
+    height: auto;
+    max-height: 95vh;
+    background: #fff;
+    border-bottom: 10px solid #46a358;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* ==================== */
+/* === up === */
+/* ==================== */
+
+.up {
+    background: rgba(70, 163, 88, 0.06);
+    min-height: 156px;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+    box-sizing: border-box;
+}
+
+.content-up {
+    padding: 20px 17px 15px 17px;
+    text-align: center;
+}
+
+.button-close {
+    text-align: right;
+    cursor: pointer;
+}
+
+.center-up {
+
+}
+
+.text-up {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #727272;
+
+    margin: 0;
+    margin-top: 16px;
+}
+
+/* ==================== */
+/* === all-data === */
+/* ==================== */
+
+.all-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+    box-sizing: border-box;
+    padding: 15px 41px 15px 41px;
+}
+
+.text-data {
+    display: grid;
+    margin: 0;
+
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #727272;
+}
+
+.text-data span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #585858;
+}
+
+.border-data {
+    border: 1px solid rgba(70, 163, 88, 0.2);
+    width: 31px;
+    transform: rotate(-90deg);
+}
+
+/* ==================== */
+/* === order-details === */
+/* ==================== */
+
+.order-details {
+    margin-top: 18px;
+    padding: 0px 41px 0px 41px;
+}
+
+.title-order-details {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.div-title-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;   
+}
+
+/* ==================== */
+/* === content-result === */
+/* ==================== */
+
+.content-result {
+    display: grid;
+    gap: 25px;
+    padding: 20px 14px 21px 161px;
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+}
+
+.text-result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-title.fatty {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.sum-title.result {
+    color: #46a358;
+}
+
+/* ==================== */
+/* === bottom === */
+/* ==================== */
+
+.bottom {
+    text-align: center;
+}
+
+.text-bottom {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+
+    margin: 14px 0 49px 0;
+}
+
+/* ========== */
+/* ========== */
+
+.button-bottom {
+    border-radius: 5px;
+    padding: 14.5px 16px;
+    background: #46a358;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 49px;
+
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.button-bottom:hover {
+    background: #4fb664;
+}
+
+.button-bottom:active {
+    background: #3d8c4d;
+}
