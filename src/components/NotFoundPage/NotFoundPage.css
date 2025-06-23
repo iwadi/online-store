@@ -1,0 +1,41 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    min-height: 100vh; 
+}
+
+.title-content {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 107%;
+    color: #3D3D3D;
+}
+
+.button-back {
+    border: none;
+    border-radius: 3px;
+    background: #46A358;
+    padding: 20px;
+    cursor: pointer;
+    
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.button-back:hover {
+    background: #54c46b;
+}
+
+.button-back:active {
+    transform: scale(1.05);
+}

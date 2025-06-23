@@ -1,0 +1,619 @@
+html,
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a,
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.body-wraper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ============================ */
+/* ======= section_1 ========== */
+/* ======= section_1 ========== */
+/* ============================ */
+
+.Section_1 {
+    margin-top: 36px;
+    margin-bottom: 87px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* ========== content-section_1 ========= */
+
+.content-section_1 {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ========== pages ========= */
+
+.pages {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-bottom: 51px;
+}
+
+.pages, a {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+
+a:hover,
+a:focus {
+    font-weight: 700;
+    color: #686868;
+}
+
+.content-left {
+    width: 782px;
+}
+
+/* ====== Products ====== */
+
+.Products {
+    display: flex;
+    align-items: center;
+    gap: 108px;
+
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+
+    margin-bottom: 11px;
+    padding-bottom: 11px;
+}
+
+.Products-title {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    margin: 0;
+}
+
+/* ====== goods ====== */
+
+.goods {
+    display: grid;
+    gap: 10px;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    color: #46A358;
+    margin-top: 20px;
+}
+
+.Product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 70px;
+    background: #fbfbfb;
+    padding: 16px 14px;
+}
+.div-product {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 8px;
+    flex: 1;
+}
+
+.img-product img {
+    width: 65px;
+    height: 65px;
+}
+
+.title-product {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.data-text {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #a5a5a5;   
+    margin: 0;
+}
+
+.data-text.size {
+    display: none;
+}
+
+.data-text span {
+    color: #727272;
+}
+
+.title-price {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #727272;
+    margin: 0;
+}
+
+.final-price {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #46A358;
+    margin: 0;
+}
+
+/* ====== counter-button ====== */
+
+/* .counter-button {
+
+} */
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    gap: 13.5px;
+}
+
+.quantity-button {
+    border-radius: 31px;
+    padding: 11px 8.5px;
+    background: linear-gradient(180deg, #46a358 0%, rgba(70, 163, 88, 0.8) 100%);
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 57%;
+    color: #fff;
+}
+
+.quantity-button:hover {
+    background: linear-gradient(180deg, #54c26a 0%, rgba(70, 163, 88, 0.8) 100%);
+}
+
+.quantity-button:active {
+    background: linear-gradient(180deg, #3d8b4d 0%, rgba(70, 163, 88, 0.8) 100%);
+}
+
+.quantity-number {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50%;
+    color: #3d3d3d;
+}
+
+/* ============ */
+
+.title-total {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #46a358;
+}
+
+.title-total_two {
+    display: none;
+    margin: 0;
+    margin-top: 18px;
+
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #46a358;
+}
+
+/* ====== Delete ====== */
+
+.Delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Delete:hover {
+    background-color: red;
+}
+
+.Delete:active {
+    background-color: rgb(226, 0, 0);
+}
+
+/* ====== cart-totals ====== */
+
+.cart-totals {
+    max-width: 332px;
+}
+
+.cart-title {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+    margin: 0;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+}
+
+.couponCode {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.coupon-input {
+    display: flex;
+}
+
+.coupon-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #46a358;
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 107%;
+    color: #7b7b7b;
+}
+
+.coupon-input[type="text"]::placeholder {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 107%;
+    color: #a5a5a5;
+}
+
+.coupon-input input:focus {
+    outline: none;
+}
+
+.coupon-button {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 0 3px 3px 0;
+    background-color: #46a358;
+    
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #fff;
+}
+
+.coupon-button:hover {
+    background-color: #4db862;
+}
+.coupon-button:active {
+    background-color: #337941;
+}
+
+/* ====== sum ====== */
+
+.sum {
+    margin-top: 30px;
+}
+
+.sum-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.sum-data:last-child {
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+.name-title {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    margin: 0;
+}
+
+.sum-title {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin: 0;
+}
+
+.view-shipping {
+    text-align: right;
+
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: #46a358;
+}
+
+.zero {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+
+.result {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}   
+
+/* ====== buttons-choice ====== */
+
+.buttons-choice {
+    margin-top: 29px;
+    display: grid;
+    text-align: center;
+}
+
+.choice_1 {
+    border-radius: 3px;
+    background: #46a358;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #fff;
+}
+
+.choice_1:hover {
+    background: #4cb261;
+}
+
+.choice_1:active {
+    background: #3f914f;
+}
+
+.choice_2 {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #46a358;
+
+    margin-top: 14px;
+}
+
+.choice_2:link {
+    color: #46a358;
+}
+
+.choice_2:visited {
+    color: #46a358;
+}
+
+.choice_2:hover {
+    color: #4cb261;
+}
+
+.choice_2:active {
+    color: #3f914f;
+}
+
+
+@media (max-width: 1153px) {
+    .content-section_1 {
+        margin-left: 24px;
+        margin-right: 24px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 737px) {
+    .pages {
+        display: none;
+    }
+}
+
+@media (max-width: 706px) {
+    .Products {
+        display: none;
+    }
+
+    .Product {
+        padding: 0;
+        border-radius: 14px;
+        box-shadow: 0 6px 20px 0 rgba(210, 210, 210, 0.25);
+        background: linear-gradient(144deg, #fff 0%, #fff 100%);
+        height: 100px;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .div-product {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13px 8px;
+    }
+
+    .img-product {
+        height: 100%;
+        border-radius: 14px 0 0 14px;
+        background: linear-gradient(144deg, #fff 0%, #f1f1f1 0.01%, #f8f8f8 100%);
+        overflow: hidden;
+    }
+
+    .img-product img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .data-text {
+        display: none;
+    }
+
+    .data-text.size {
+        display: block;
+    }
+
+    .Product .quantity-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 29px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        background: #f6f6f6;;
+        border: none;
+        cursor: pointer;
+        transition: all .3s;
+
+        font-family: OpenSans;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 76%;
+        color: #3d3d3d;
+    }
+
+    .Product .quantity-button:hover {
+        background: #f6f6f6;
+    }
+
+    .Product .quantity-button:active {
+        background: #989898;
+    }
+
+    .Product .quantity-number {
+        font-family: OpenSans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #3d3d3d;
+    }
+
+    .title-price, .title-total {
+        display: none;
+    }
+
+    .final-price {
+        display: none;
+    }
+
+    .title-total_two {
+        display: block;
+    }
+
+    .Delete {
+        display: none;
+        z-index: -1;
+    }
+
+    /* All these coupons need to have border-radius in the styles */
+
+    .coupon-button {
+        border-radius: 40px;
+    }
+
+    .coupon-input {
+        box-shadow: 0 6px 20px 0 rgba(210, 210, 210, 0.25);
+        background: linear-gradient(144deg, #fff 0%, #fff 100%);
+        border-radius: 40px;
+    }
+
+    .coupon-input input[type="text"] {
+        border: 1px solid #fff;
+        border-radius: 40px 0 0 40px;
+        padding: 17.5px;
+    }
+}
+
+@media (max-width: 521px) {
+    .Product {
+        gap: 0;
+    }
+    
+    .div-product {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 463px) {
+    .title-total_two {
+        margin-top: 1px;
+    }
+}

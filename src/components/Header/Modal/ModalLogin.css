@@ -1,0 +1,307 @@
+.ModalL {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000078;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 105;
+
+    transform: scale(0);
+    transition: .3s;
+}
+
+.ModalL.active {
+    transform: scale(1);
+}
+
+/* ========== */
+/* ========== */
+
+.modal-content {
+    display: grid;
+    justify-content: center;
+    width: 90vw; 
+    max-width: 530px; 
+    height: auto;
+    max-height: 90vh;
+    background: #fff;
+    border-bottom: 10px solid #46a358;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* ==================== */
+/* === transition === */
+/* ==================== */
+
+.transition {
+    padding: 14px 15px 0;
+    text-align: center;
+}
+
+/* ========== */
+/* ========== */
+
+.button-close {
+    text-align: right;
+    cursor: pointer;
+}
+
+/* ========== */
+/* ========== */
+
+.center-transition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+/* ========== */
+
+.title-transition {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80%;
+    color: #3d3d3d;
+    cursor: pointer;
+
+    margin: 0;
+    transition: .3s;
+}
+
+.title-transition.Login {
+    color: #46a358;
+}
+
+.title-transition.Register {
+    color: #46a358;
+}
+
+.title-transition:hover {
+    color: #000000;
+}
+
+/* ========== */
+/* ========== */
+
+.border {
+    border: 1px solid #3d3d3d;
+    width: 14px;
+    transform: rotate(90deg);
+}
+
+/* ==================== */
+/* === entrance-content === */
+/* ==================== */
+
+.entrance-content {
+    padding: 43px 100px 58px 100px;
+}
+
+.data-content {
+    text-align: center;
+}
+
+/* ========== */
+/* ========== */
+
+.modal-text {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+
+    margin: 0;
+}
+
+/* ========== */
+/* ========== */
+
+.label-content {
+    display: grid;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+/* ========== */
+
+.input-data {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    padding: 12px 14px;
+
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #909090;
+}
+
+.input-data:focus {
+    border: 1px solid #46a358;
+    outline: none;
+}
+
+.input-data::placeholder {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #a5a5a5;
+}
+
+/* ========== */
+/* ========== */
+
+.title-forgot {
+    text-align: right;
+    margin: 0;
+}
+
+.title-forgot a {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+}
+
+/* ========== */
+/* ========== */
+
+.button-entrance {
+    border-radius: 5px;
+    border: none;
+    background: #46a358;
+    padding: 14.5px 129px;
+    cursor: pointer;
+    margin-top: 27px;
+    transition: .3s;
+
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.button-entrance:hover {
+    background: #50ba66;
+}
+
+.button-entrance:active {
+    background: #3c8e4c;
+}
+
+/* ==================== */
+/* === differently-content === */
+/* ==================== */
+
+.differently-content {
+    margin-top: 46px;
+}
+
+/* ========== */
+/* ========== */
+
+.modal-text.borders {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.modal-text.borders::before,
+.modal-text.borders::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ========== */
+/* ========== */
+
+.buttons-choices {
+    display: grid;
+    gap: 15px;
+    margin-top: 27px;
+}
+
+/* ========== */
+
+.choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.choice:hover {
+    transform: scale(1.05);
+    border: 1px solid #bfbfbf;
+}
+
+.choice:active {
+    transform: scale(0.95);
+}
+
+/* ========== */
+
+.text-choice {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    color: #727272;
+
+    margin: 0;
+}
+
+.error-message {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 123%;
+    color: #e74c3c;
+
+    margin-bottom: 5px;
+}
+
+@media (max-width: 737px) {
+    .modal-content {
+        width: 95vw; 
+        max-width: 400px; 
+        max-height: 85vh; 
+    }
+
+    .entrance-content {
+        padding: 20px 30px; 
+    }
+
+    .input-data {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .button-entrance {
+        padding: 14.5px 0; 
+        width: 100%; 
+    }
+}

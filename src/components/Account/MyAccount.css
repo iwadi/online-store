@@ -1,0 +1,291 @@
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Sidebar {
+    background: #fbfbfb;
+    max-width: 310px; 
+    height: 50%;
+}
+
+.title-sidebar {
+    margin: 0;
+    padding: 17px 18px;
+
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+
+.sections-sidebar {
+    padding-bottom: 19px;
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+}
+
+.chapter-sidebar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-right: 137px;
+    padding-left: 25px;
+
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 300%;
+    color: #727272;
+}
+
+.chapter-sidebar:focus {
+    background: #fff;
+    border-left: 5px solid #46a358;
+}
+
+.Loguot {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    border: none;
+    background: transparent;
+    padding: 19px 24px;
+    cursor: pointer;
+}
+
+.Loguot span {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: #46a358;
+}
+
+.Loguot span:hover {
+    color: #52c268;
+}
+
+.Loguot span:active {
+    color: #398247;
+}
+
+
+
+.titles-form {
+    margin-bottom: 30px;
+}
+
+.password-change {
+    margin-top: 35px;
+}
+
+.buttons-photo {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.add-photo {
+    display: flex;
+    border: 1px solid #d3d3d3;
+    border-radius: 100%;
+    background-color: #fbfbfb;
+    padding: 15.75px;
+    cursor: pointer;
+}
+
+.Change {
+    border: none;
+    border-radius: 3px;
+    background: #46a358;
+    padding: 12px 23px;
+    cursor: pointer;
+
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+    color: #fff;
+}
+
+.Change.save {
+    max-width: 131px;
+    padding: 12px 21px;
+    margin-top: 20px;
+}
+
+.Remove {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+}
+
+
+.delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.text-delivery {
+    margin: 0;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 107%;
+    color: #727272;
+}
+
+.delivery-rigth {
+    display: flex;
+    gap: 63px;
+    align-items: center;
+}
+
+.add-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #46a358;
+}
+
+/* ========================= */
+/* ========= media ========= */
+/* ========================= */
+
+@media (max-width: 1088px) {
+    .Sidebar {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .sections-sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .chapter-sidebar {
+        padding-right: 20px;
+    }
+    .Loguot {
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 100%;
+        padding: 0 15px; 
+        margin-top: 30px;
+    }
+    .form-row {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    .form-group {
+        width: 100%; 
+    }
+    .form-group-input {
+        width: 100%;
+    }
+
+    .content-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-sidebar {
+        text-align: center;
+    }
+
+    .delivery {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .delivery-rigth {
+        gap: 20px; 
+        margin-top: 10px;
+    }
+
+    .phone-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .country-code select,
+    .phone-input input {
+        width: 100%; 
+    }
+
+    .buttons-photo {
+        flex-wrap: wrap; 
+        gap: 15px;
+    }
+
+    .Change.save {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-Form {
+        font-size: 18px; 
+    }
+
+    .title-form {
+        font-size: 14px; 
+    }
+
+    .form-group-input {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    .add-photo {
+        padding: 10px; 
+    }
+
+    .Change,
+    .Remove {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .chapter-sidebar {
+        font-size: 13px; 
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .title-sidebar {
+        font-size: 16px; 
+        padding: 15px;
+    }
+
+    .Loguot span {
+        font-size: 13px;
+    }
+
+    .add-button {
+        font-size: 14px;
+    }
+
+    .text-delivery {
+        font-size: 12px;
+        text-align: center;
+    }
+}
