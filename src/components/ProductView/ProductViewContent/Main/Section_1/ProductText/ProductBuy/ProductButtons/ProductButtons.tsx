@@ -15,7 +15,7 @@ function ProductButtons({ product, }: ProductButtonsProps) {
     return (
         <>
             <div className="product-buttons">
-                <button className="button-buy">BUY NOW</button>
+                <button className="button-buy" onClick={() => addToCart(product)}>BUY NOW</button>
                 {/* <button className="button-add" onClick={handleAddToCart}>ADD TO CART</button> */}
                 <button className="button-add" onClick={() => addToCart(product)}>ADD TO CART</button>
                 {/* <button className="button-favorites">
